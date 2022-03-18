@@ -10,10 +10,11 @@ export function GuestList(props:any) {
         .then(data => setGuestList(data))
         console.log("hei!")
         console.log(guestList)
-    }, [])
+    }, [props.updateCount])
 
     return (
         <div>
+            <p>Guest list:</p>
             <ul>
                {guestList.map((elem) => 
                <li key={elem['id']}>{elem['name']}</li>)}

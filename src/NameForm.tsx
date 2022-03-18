@@ -6,7 +6,9 @@ export function NameForm(props:any) {
 
     const handleSubmit = (evt:any) => {
         evt.preventDefault();
+        props.handleUpdateCount();
         postName()
+        setName("")
     }
 
     
