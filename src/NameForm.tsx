@@ -9,21 +9,6 @@ export function NameForm(props:any) {
         postName()
     }
 
-    /*
-    const postName = () => {
-        var request:any = require('request');
-        request.post(
-            'https://marsbackend.azurewebsites.net/api/HttpTrigger1?code=RjrNM4fE4YfoRTPe0e9xO2CE83zdf3u9rKt2vIyeIrVo5UTXBjammA==',
-            { json: { name: name, task: "hvorfortrengerjegdenne" } },
-            function (error:any, response:any, body:any) {
-                if (!error && response.statusCode == 200) {
-                    console.log(body);
-                }
-            }
-        );
-    }
-    */
-
     
     const postName = () => {
         const requestOptions = {
@@ -45,6 +30,7 @@ export function NameForm(props:any) {
                     type="text"
                     value={name}
                     onChange={e => setName(e.target.value)}
+                    autoFocus
                 />
             </label>
             <input type="submit" value="Submit" className="submitbutton"/>

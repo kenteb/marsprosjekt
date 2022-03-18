@@ -1,8 +1,21 @@
+.Outer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+
+  background-color: #b8b4ac;
+}
+
+.Visitors {
+  color: white;
+}
+
 .Main {
   text-align: center;
   background-color: #b8b4ac;
   min-height: 100vh;
-  display: flex;
+  display:flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;

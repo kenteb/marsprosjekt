@@ -6,9 +6,14 @@ import { GuestList } from './GuestList';
 
 function App() {
   return (
-    <div className="Main">
-      <GuestList />
-      <NameForm />
+    <div className="Outer">
+      <div className="Visitors">
+        <GuestList />
+      </div>
+      <div className="Main">
+        <NameForm />
+      </div>
+      <div></div>
     </div>
   );
 }
