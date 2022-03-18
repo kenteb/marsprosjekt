@@ -19,7 +19,9 @@ function App() {
       <div className="Main">
         <NameForm updateCount={updateCount} handleUpdateCount={handleUpdateCount}/>
       </div>
-      <div></div>
+      <div className="somethingElse">
+        
+      </div>
     </div>
   );
 }
