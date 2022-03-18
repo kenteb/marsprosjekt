@@ -1,16 +1,14 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { NameForm } from './NameForm';
+import { GuestList } from './GuestList';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Test
-        </p>
-      </header>
+    <div className="Main">
+      <GuestList />
+      <NameForm />
     </div>
   );
 }
